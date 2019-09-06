@@ -8,6 +8,9 @@ deploy:
   skip-cleanup: true
   local_dir: docs/.vuepress/dist
   github-token: $GITHUB_TOKEN # a token generated on github allowing travis to push code on you repository
-  keep-history: false
+  keep-history: false # uses git push --force to overwrite the history on the target branch
+  repo: HFUN/hfun.github.io
+  target_branch: master
+  fqdn: hfun.me
   on:
     branch: master
